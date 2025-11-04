@@ -148,21 +148,6 @@ class UpcomingTripFragment : Fragment() {
         binding.recyclerViewUpcoming.adapter = adapter
     }
 
-//    private fun setupRecyclerViewUpcomingTripDetails() {
-//        adapter = TripListAdapter(emptyList()) { trip ->
-//            val detailFragment = UpcomingTripDetailsFragment.newInstance(
-//                trip.id ?: 0,
-//                trip.isUpcoming ?: false
-//            )
-//            parentFragmentManager.beginTransaction()
-//                .replace(R.id.fragmentContainer, detailFragment)
-//                .addToBackStack(null)
-//                .commit()
-//        }
-//        binding.recyclerViewUpcoming.layoutManager = LinearLayoutManager(requireContext())
-//        binding.recyclerViewUpcoming.adapter = adapter
-//    }
-
 
     private fun setupRecyclerViewUpcomingTripDetails() {
         adapter = TripListAdapter(emptyList()) { trip ->

@@ -8,7 +8,7 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.example.xmlproject.databinding.FragmentWalletBinding
 
-class WalletFragment: Fragment() {
+class WalletFragment : Fragment() {
 
     private var _binding: FragmentWalletBinding? = null
     private val binding get() = _binding!!
@@ -38,4 +38,4 @@ class WalletFragment: Fragment() {
         }
     }
 
-    }
+}

@@ -1,47 +1,5 @@
 package com.example.xmlproject.data.model.response
 
-
-//data class TripDetailResponse(
-//    val id: Int?,
-//    val distanceKm: Double?,
-//    val totalMaterialCost: Double?,
-//    val materialCost: Double?,
-//    val transportCost: Double?,
-//    val totalCost: Double?,
-//    val status: String?,
-//    val createdAt: String?,
-//    val destinationImage: String?,
-//    val receiver: Receiver?,
-//    val dropoffAddress: DropoffAddress?,
-//    val category: Category?,
-//    val customer: Customer?
-//) : Serializable
-
-//data class Receiver(
-//    val name: String?,
-//    val phone: String?,
-//    val diaCode: String?
-//) : Serializable
-
-//data class DropoffAddress(
-//    val line1: String?,
-//    val line2: String?,
-//    val city: String?,
-//    val state: String?
-//) : Serializable
-//
-//data class Category(
-//    val name: String?,
-//    val itemType: String?,
-//    val price: Double?
-//) : Serializable
-//
-//data class Customer(
-//    val name: String?,
-//    val profileImage: String?
-//) : Serializable
-
-
 data class TripDetailsResponse(
     val id: Int?,
     val customerId: Int?,

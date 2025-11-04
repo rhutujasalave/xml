@@ -24,14 +24,6 @@ data class Receiver(
     val diaCode: String?
 )
 
-//data class DropoffAddress(
-//    val line1: String?,
-//    val line2 :String?,
-//    val city: String?,
-//    val state: String?,
-//    val postal_code: String?
-//)
-
 data class DropoffAddress(
     val line1: String?,
     val line2: String?,
@@ -44,7 +36,6 @@ data class DropoffAddress(
             .joinToString(", ")
     }
 }
-
 
 data class Category(
     val name: String?,
