@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingBottom="16dp">
+
+        <ImageView
+            android:id="@+id/imageProfile"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_profile"
+            android:scaleType="centerCrop"
+            android:padding="2dp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingStart="12dp">
+
+            <TextView
+                android:id="@+id/tvUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="John Smith"
+                android:textColor="#3A3A8F"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvRole"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Captain"
+                android:textColor="#808080"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tvStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="● Online"
+                android:textColor="#00C853"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/btnClose"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_close"
+            app:tint="#3A3A8F" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#E0E0E0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="12dp">
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/item_drawer_menu"
+            android:id="@+id/itemHome"
+            android:tag="Home"
+            android:layout_marginTop="8dp"
+            android:drawableStart="@drawable/ic_home"
+            android:text="Home" />
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/item_drawer_menu"
+            android:id="@+id/itemProfile"
+            android:tag="Profile"
+            android:layout_marginTop="8dp"
+            android:text="Profile"
+            android:drawableStart="@drawable/ic_profile" />
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/item_drawer_menu"
+            android:id="@+id/itemTrip"
+            android:tag="Trip Activity"
+            android:layout_marginTop="8dp"
+            android:text="Trip Activity"
+            android:drawableStart="@drawable/ic_history" />
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/item_drawer_menu"
+            android:id="@+id/itemLoyalty"
+            android:tag="Loyalty Points"
+            android:layout_marginTop="8dp"
+            android:text="Loyalty Points"
+            android:drawableStart="@drawable/ic_wallet" />
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/item_drawer_menu"
+            android:id="@+id/itemWallet"
+            android:tag="My Wallet"
+            android:layout_marginTop="8dp"
+            android:text="My Wallet"
+            android:drawableStart="@drawable/ic_wallet" />
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/item_drawer_menu"
+            android:id="@+id/itemNotifications"
+            android:tag="Notifications"
+            android:layout_marginTop="8dp"
+            android:text="Notifications"
+            android:drawableStart="@drawable/ic_notifications" />
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/item_drawer_menu"
+            android:id="@+id/itemAbout"
+            android:tag="About Us"
+            android:layout_marginTop="8dp"
+            android:text="About Us"
+            android:drawableStart="@drawable/ic_about" />
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/item_drawer_menu"
+            android:id="@+id/itemLogout"
+            android:tag="Logout"
+            android:layout_marginTop="8dp"
+            android:text="Logout"
+            android:drawableStart="@drawable/ic_logout" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:background="#E0E0E0" />
+
+    <TextView
+        android:id="@+id/tvVersion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Version 1.00"
+        android:textSize="12sp"
+        android:textColor="#B0B0B0"
+        android:gravity="center"
+        android:layout_marginTop="12dp"/>
+
+</LinearLayout>
